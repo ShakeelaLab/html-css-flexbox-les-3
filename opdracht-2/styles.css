@@ -1,0 +1,216 @@
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typografie
+    3. Areas
+        3.1 Navigation
+        3.2 Header
+        3.3 Grid items
+        3.4 Footer
+////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////
+    1. Global Styles
+////////////////////////*/
+
+:root {
+    --nav-side-left-color: #F3F3F3;
+    --footer-color: #383838;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+/*////////////////////////
+    2. Typography
+////////////////////////*/
+
+
+/*////////////////////////
+    3. Areas
+////////////////////////*/
+
+
+
+/*///////////// 3.1 Navigation /////////////*/
+
+.outercontainer {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: auto;
+    height: 100vh;
+}
+
+.inner-container-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.navbar {
+    height: 100vh;
+    background-color: var(--nav-side-left-color);
+    flex-basis: 250px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-company-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    padding: 0 0 40px 0;
+}
+
+.navbar-list-item-articles,
+.navbar-list-item-articles li,
+.navbar-buttons ul li {
+    list-style: none;
+}
+
+
+.nav-link {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.navbar-buttons {
+    gap: 10px;
+    background-color: var(--nav-side-left-color);
+    margin-top: auto;
+}
+
+.navbar-buttons ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.navbar-buttons ul li {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-primary,.button-secondary {
+    flex-basis: 250px;
+    min-width: 300px;
+}
+
+.button-secondary {
+    border: 2px solid black;
+}
+
+.button-secondary-apply:hover {
+    color: white;
+}
+
+
+/*///////////// 3.2 Header /////////////*/
+
+.header-content{
+    height: 100vh;
+}
+
+.header-wrapper {
+    flex-basis: 0;
+    flex-grow: 12;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.header-image {
+    text-align: center;
+    background-image: url("../assets/placeholder-image.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+/*///////////// 3.3 Grid items /////////////*/
+
+.articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+.item-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.75rem;
+    flex: 0 1 calc(33.333% - 2em);
+    max-width: calc(33.333% - 2em);
+}
+
+.item-article img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price img {
+    width: 16px;
+}
+
+.item-article {
+    flex: 1 1 260px;
+    max-width: 300px;
+}
+
+.item-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 260px;
+    flex-grow: 0;
+}
+
+.button-secondary-apply {
+    background-color: #383838;
+    color: #e3e3e3;
+}
+
+/*///////////// 3.4 Footer /////////////*/
+
+
+footer {
+    background-color: var(--footer-color);
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    /*margin-top: auto;*/
+}
+
+
+
+
+
+
+
