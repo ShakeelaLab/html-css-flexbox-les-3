@@ -86,6 +86,7 @@ body {
     gap: 16px;
 }
 
+
 .navbar-buttons {
     gap: 10px;
     background-color: var(--nav-side-left-color);
@@ -115,11 +116,9 @@ body {
 .button-secondary-apply:hover {
     color: white;
 }
-
-
 /*///////////// 3.2 Header /////////////*/
 
-.header-content{
+.header-content {
     height: 100vh;
 }
 
